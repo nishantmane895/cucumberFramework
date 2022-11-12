@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 		//plugin = { "pretty", "html:target/cucumber-reports.html" },
 		plugin = { "pretty", "html:target/cucumber-html-report.html","json:target/cucumber.json" },
 		monochrome = true
-		,tags="@Sanity"
+		,tags="@api"
 		//,dryRun = true		
 		)
 public class TestRunner {

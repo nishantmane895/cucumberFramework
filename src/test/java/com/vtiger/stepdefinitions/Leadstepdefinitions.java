@@ -25,7 +25,7 @@ public class Leadstepdefinitions extends BaseStepDefinitions {
 	public void after()
 	{
 		extent.flush();
-		driver.quit();
+		
 	}
 	
 	@When("user enters mandatory fields and click on save button")

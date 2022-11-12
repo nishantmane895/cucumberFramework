@@ -29,7 +29,7 @@ public class Loginstepdefinition extends BaseStepDefinitions {
 	public void after()
 	{
 		extent.flush();
-		driver.quit();
+		
 	}
 	@Given("user should be on login page")
 	public void user_should_be_on_login_page() {

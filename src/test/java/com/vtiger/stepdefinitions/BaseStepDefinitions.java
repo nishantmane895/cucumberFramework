@@ -50,8 +50,17 @@ public class BaseStepDefinitions {
 			createReport();
 		}
 		
-		launchApp();
-		TestData = readExcelData(System.getProperty("user.dir")+"/src/test/resources/TestData/Data.xlsx","Sheet1");
+		if(prop.getProperty("TestingType").equals("API"))
+		{
+			TestData = readExcelData(System.getProperty("user.dir")+"/src/test/resources/TestData/APIData.xlsx","Sheet1");
+		}
+		else if(prop.getProperty("TestingType").equals("WEB"))
+		{
+			launchApp();
+			TestData = readExcelData(System.getProperty("user.dir")+"/src/test/resources/TestData/Data.xlsx","Sheet1");
+		}
+		
+	
 	}
 	
 	
